@@ -80,24 +80,24 @@ local electronics_screen_1 = {
 }
 
 local electronics_screen_2 = {
-	{"Advanced Anti-Gravity Core",0,1,117.05,20},{"Basic Anti-Matter Capsule",0,1,24,4.6},
-	{"Rare Anti-Gravity Core",0,1,123.22,22.5},{"Uncommon Anti-Matter Capsule",0,1,24.32,4.6},
-	{"Exotic Anti-Gravity Core",0,1,133.06,25},{"Advanced Anti-Matter Capsule",0,1,24.88,4.6},
-	{"Advanced Anti-Matter Core Unit",0,1,107.08,21.5},{"reserve",0,1,0,1},
-	{"Advanced Quantum Alignment Unit",0,1,35.78,25},{"reserve",0,1,0,1},
-	{"Exotic Quantum Alignment Unit",0,1,43.24,30},{"reserve",0,1,0,1},
+	{"Adv Anti-Grav Core",4400,1,117.05,20},{"Basic Anti-Matt Capsule",0,1,24,4.6},
+	{"Rare Anti-Grav Core",2721,1,123.22,22.5},{"Uncommon Anti-Matter Capsule",0,1,24.32,4.6},
+	{"Exot Anti-Grav Core",0,1,133.06,25},{"Adv Anti-Matter Capsule",0,1,24.88,4.6},
+	{"Adv Anti-Matter Core",2214,1,107.08,21.5},{"reserve",0,1,0,1},
+	{"Adv Quant Align Unit",1373,1,35.78,25},{"reserve",0,1,0,1},
+	{"Exot Quant Align Unit",0,1,43.24,30},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
 }
 
 local electronics_screen_3 = {
-	{"Basic Core System XS",0,1,4.43,4.4},{"Basic Power Transformer M",0,1,0,1},
+	{"Basic Core System XS",0,1,4.43,4.4},{"Basic Power Transformer M",1497,1,1020,196.4},
 	{"Basic Core System S",0,1,23.57,23.6},{"Advanced Power Transformer M",0,1,0,1},
-	{"Uncommon Core System S",0,1,28.08,27.2},{"Uncommon Power Transformer S",0,1,0,1},
+	{"Uncommon Core System S",2385,1,28.08,27.2},{"Uncommon Power Transformer S",0,1,0,1},
 	{"Uncommon Core System M",0,1,28.08,135.75},{"Uncommon Power Transformer M",0,1,0,1},
-	{"Uncommon Core System L",0,1,737.1,728},{"Rare Power Transformer M",0,1,0,1},
-	{"Advanced Core System M",0,1,139.61,132.8},{"Rare Power Transformer L",0,1,0,1},
-	{"Rare Core System L",0,1,783.65,728},{"Rare Power Transformer XS",0,1,0,1},
+	{"Uncommon Core System L",3311,1,737.1,728},{"Rare Power Transformer M",0,1,0,1},
+	{"Advanced Core System M",2854,1,139.61,132.8},{"Rare Power Transformer L",4473,1,5570,1066.69},
+	{"Rare Core System L",3249,1,783.65,728},{"Rare Power Transformer XL",2515,1,30540,5857.09},
 	{"Exotic Core System S",0,1,28.62,26.8},{"reserve",0,1,0,1}
 }
 
@@ -119,7 +119,7 @@ local metalwork_screen_2 = {
 	{"Basic Singularity Container",0,1,45.36,4},{"reserve",0,1,0,1},
 	{"Uncommon Singularity Container",0,1,44.88,4},{"reserve",0,1,0,1},
 	{"Advanced Singularity Container",0,1,46.22,4},{"reserve",0,1,0,1},
-	{"Rare Singularity Container",0,1,46.58,4},{"reserve",0,1,0,1},
+	{"Rare Singularity Container",2646,1600,46.58,4},{"reserve",0,1,0,1},
 	{"Exotic Singularity Container",0,1,46.98,4},{"reserve",0,1,0,1}
 }
 
@@ -343,7 +343,6 @@ local html_head = [[<style>
 -------------------------
 -- FUNCTIONS ------
 -------------------------
-
 local function initiateSlots()
 	for _, slot in pairs(unit) do
 		if type(slot) == "table" and type(slot.export) == "table" and slot.getElementClass then
@@ -351,7 +350,7 @@ local function initiateSlots()
 			if elementClass:find("coreunit") then
 				core = slot
 			elseif elementClass == "screenunit" then
-				screens[slot.getId()] = slot
+				table.insert(screens,slot)
 			end
 		end
 	end
@@ -359,11 +358,12 @@ local function initiateSlots()
 	if not core then
 		error("Core is not connected!")
 	end
+    
 	if #screens < 1 then
 		error("No screen connected!")
 	end
 	
-	table.sort(screens)
+	table.sort(screens, function (a, b) return (a.getId() < b.getId()) end)
 end
 
 
