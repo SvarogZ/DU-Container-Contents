@@ -145,6 +145,62 @@ local metalwork_screen_4 = {
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
 }
 
+local metalwork_screen_4_ext = {
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"Basic Electric Engine M",0,1,377.75,39.04},
+	{"reserve",0,1,0,1},{"Basic Electric Engine S",0,1,1930,206.4},
+	{"reserve",0,1,0,1},{"Uncommon Electric Engine XL",0,1,50800,6107.49}
+}
+
+local metalwork_screen_5 = {
+	{"Basic Mobile Panel XS",0,1,20,9.6},{"Uncommon Mobile Panel XS",0,1,0,1},
+	{"Basic Mobile Panel S",0,1,103,49.6},{"Uncommon Mobile Panel S",0,1,0,1},
+	{"Basic Mobile Panel M",0,1,536,259.2},{"Uncommon Mobile Panel M",0,1,0,1},
+	{"Basic Mobile Panel L",0,1,2830,1374.4},{"Uncommon Mobile Panel L",0,1,0,1},
+	{"Basic Mobile Panel XL",0,1,15160,7420.8},{"Uncommon Mobile Panel XL",0,1,0,1},
+	{"Advanced Mobile Panel XS",0,1,0,1},{"Advanced Mobile Panel L",0,1,0,1},
+	{"Advanced Mobile Panel s",0,1,0,1},{"Advanced Mobile Panel XL",0,1,0,1},
+	{"Advanced Mobile Panel M",0,1,0,1},{"reserve",0,1,0,1}
+}
+
+local metalwork_screen_6 = {
+	{"Basic Standard Frame XS",0,1,0,1},{"Advanced Standard Frame XS",0,1,0,1},
+	{"Basic Standard Frame S",0,1,0,1},{"Advanced Standard Frame S",0,1,0,1},
+	{"Basic Standard Frame M",0,1,0,1},{"Advanced Standard Frame M",0,1,0,1},
+	{"Basic Standard Frame L",0,1,0,1},{"Advanced Standard Frame L",0,1,0,1},
+	{"Uncommon Standard Frame XS",0,1,0,1},{"Advanced Standard Frame XL",0,1,0,1},
+	{"Uncommon Standard Frame S",0,1,0,1},{"Rare Standard Frame S",0,1,0,1},
+	{"Uncommon Standard Frame M",0,1,0,1},{"Rare Standard Frame L",0,1,0,1},
+	{"Uncommon Standard Frame L",0,1,0,1},{"Rare Standard Frame M",0,1,0,1}
+}
+
+
+local metalwork_screen_7 = {
+	{"Basic Reinforced Frame XS",0,1,0,1},{"Uncommon Reinforced Frame XS",0,1,0,1},
+	{"Basic Reinforced Frame S",0,1,0,1},{"Uncommon Reinforced Frame S",0,1,0,1},
+	{"Basic Reinforced Frame M",0,1,0,1},{"Uncommon Reinforced Frame M",0,1,0,1},
+	{"Basic Reinforced Frame L",0,1,0,1},{"Uncommon Reinforced Frame L",0,1,0,1},
+	{"Basic Reinforced Frame XL",0,1,0,1},{"Uncommon Reinforced Frame XL",0,1,0,1},
+	{"Advanced Reinforced Frame XS",0,1,0,1},{"Advanced Reinforced Frame L",0,1,0,1},
+	{"Advanced Reinforced Frame S",0,1,0,1},{"Advanced Reinforced Frame XL",0,1,0,1},
+	{"Advanced Reinforced Frame M",0,1,0,1},{"reserve",0,1,0,1}
+}
+
+local metalwork_screen_8 = {
+	{"Rare Reinforced Frame XS",0,1,0,1},{"Exotic Reinforced Frame XS",0,1,0,1},
+	{"Rare Reinforced Frame S",0,1,0,1},{"Exotic Reinforced Frame S",0,1,0,1},
+	{"Rare Reinforced Frame M",0,1,0,1},{"Exotic Reinforced Frame M",0,1,0,1},
+	{"Rare Reinforced Frame L",0,1,0,1},{"Exotic Reinforced Frame L",0,1,0,1},
+	{"Rare Reinforced Frame XL",0,1,0,1},{"Exotic Reinforced Frame XL",0,1,0,1},
+	{"Exotic Standard Frame XS",0,1,0,1},{"Exotic Standard Frame L",0,1,0,1},
+	{"Exotic Standard Frame S",0,1,0,1},{"Exotic Standard Frame M",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
+}
+
 local chemical_screen_1 = {
 	-- T1
 	{"Polycarbonate Plactic",607,12000,1.4,1},{"Glass",1119,2000,2.5,1},
