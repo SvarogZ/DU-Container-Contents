@@ -71,7 +71,7 @@ local alloy_screen = {
 local electronics_screen_1 = {
 	{"Basic Connector",752,4800,3.75,0.8},{"Basic Component",751,3000,2.25,0.5},
 	{"Uncommon Connector",1543,3200,3.9,0.8},{"Uncommon Component",837,1000,2.34,0.5},
-	{"Advanced Connector",2016,1600,4.18,0.8},{"Advanced Component",2464,600,2.51,0.5},
+	{"Advanced Connector",2016,1600,4.18,0.8},{"Advanced Component",2464,1600,2.51,0.5},
 	{"Basic Electronics",883,40000,5.22,4},{"Basic Power System",790,60000,60,9.2},
 	{"Uncommon Electronics",882,24000,5.34,4},{"Uncommon Power System",1553,100000,62.4,9.2},
 	{"Advanced Electronics",1253,8000,5.45,4},{"Advanced Power System",1554,20000,64.9,9.2},
@@ -80,24 +80,24 @@ local electronics_screen_1 = {
 }
 
 local electronics_screen_2 = {
-	{"Adv Anti-Grav Core",4400,1,117.05,20},{"Basic Anti-Matt Capsule",0,1,24,4.6},
-	{"Rare Anti-Grav Core",2721,1,123.22,22.5},{"Uncommon Anti-Matter Capsule",0,1,24.32,4.6},
+	{"Adv Anti-Grav Core",4400,1200,117.05,20},{"Basic Anti-Matt Capsule",0,1,24,4.6},
+	{"Rare Anti-Grav Core",2721,1200,123.22,22.5},{"Uncommon Anti-Matter Capsule",0,1,24.32,4.6},
 	{"Exot Anti-Grav Core",0,1,133.06,25},{"Adv Anti-Matter Capsule",0,1,24.88,4.6},
-	{"Adv Anti-Matter Core",2214,1,107.08,21.5},{"reserve",0,1,0,1},
-	{"Adv Quant Align Unit",1373,1,35.78,25},{"reserve",0,1,0,1},
+	{"Adv Anti-Matter Core",2214,4000,107.08,21.5},{"reserve",0,1,0,1},
+	{"Adv Quant Align Unit",1373,5000,35.78,25},{"reserve",0,1,0,1},
 	{"Exot Quant Align Unit",0,1,43.24,30},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
 }
 
 local electronics_screen_3 = {
-	{"Basic Core System XS",0,1,4.43,4.4},{"Basic Power Transformer M",1497,1,1020,196.4},
-	{"Basic Core System S",0,1,23.57,23.6},{"Advanced Power Transformer M",0,1,0,1},
-	{"Uncommon Core System S",2385,1,28.08,27.2},{"Uncommon Power Transformer S",0,1,0,1},
-	{"Uncommon Core System M",0,1,28.08,135.75},{"Uncommon Power Transformer M",0,1,0,1},
-	{"Uncommon Core System L",3311,1,737.1,728},{"Rare Power Transformer M",0,1,0,1},
-	{"Advanced Core System M",2854,1,139.61,132.8},{"Rare Power Transformer L",4473,1,5570,1066.69},
-	{"Rare Core System L",3249,1,783.65,728},{"Rare Power Transformer XL",2515,1,30540,5857.09},
+	{"Basic Core System XS",0,1,4.43,4.4},{"Basic Power Transf M",1497,4000,1020,196.4},
+	{"Basic Core System S",0,1,23.57,23.6},{"Advanced Power Transf M",0,1,0,1},
+	{"Uncommon Core System S",2385,600,28.08,27.2},{"Uncommon Power Transf S",0,1,0,1},
+	{"Uncommon Core System M",0,1,28.08,135.75},{"Uncommon Power Transf M",0,1,0,1},
+	{"Uncommon Core System L",3311,7000,737.1,728},{"Rare Power Transf M",0,1,0,1},
+	{"Advanced Core System M",2854,1300,139.61,132.8},{"Rare Power Transf L",4473,20000,5570,1066.69},
+	{"Rare Core System L",3249,7300,783.65,728},{"Rare Power Transf XL",2515,10000,30540,5857.09},
 	{"Exotic Core System S",0,1,28.62,26.8},{"reserve",0,1,0,1}
 }
 
@@ -113,21 +113,21 @@ local metalwork_screen_1 = {
 }
 
 local metalwork_screen_2 = {
-	{"Basic Burner",0,1,50.2,10},{"reserve",0,1,0,1},
-	{"Uncommon Burner",0,1,49.4,10},{"reserve",0,1,0,1},
+	{"Basic Burner",1457,20000,50.2,10},{"reserve",0,1,0,1},
+	{"Uncommon Burner",3935,40000,49.4,10},{"reserve",0,1,0,1},
 	{"Advanced Burner",0,1,48.5,10},{"reserve",0,1,0,1},
-	{"Basic Singularity Container",0,1,45.36,4},{"reserve",0,1,0,1},
-	{"Uncommon Singularity Container",0,1,44.88,4},{"reserve",0,1,0,1},
-	{"Advanced Singularity Container",0,1,46.22,4},{"reserve",0,1,0,1},
+	{"Basic Singularity Container",2629,4000,45.36,4},{"reserve",0,1,0,1},
+	{"Uncommon Singularity Container",2631,2400,44.88,4},{"reserve",0,1,0,1},
+	{"Advanced Singularity Container",2635,1600,46.22,4},{"reserve",0,1,0,1},
 	{"Rare Singularity Container",2646,1600,46.58,4},{"reserve",0,1,0,1},
-	{"Exotic Singularity Container",0,1,46.98,4},{"reserve",0,1,0,1}
+	{"Exotic Singularity Container",0,1600,46.98,4},{"reserve",0,1,0,1}
 }
 
 local metalwork_screen_3 = {
-	{"Basic Combustion Chamber XS",0,1,60.65,9.6},{"Uncommon Combustion Chamber XS",0,1,112.07,18.4},
+	{"Basic Combustion Chamber XS",0,1,60.65,9.6},{"Uncommon Combustion Chamb XS",0,1,112.07,18.4},
 	{"Basic Combustion Chamber S",0,1,319.35,49.6},{"Uncommon Combustion Chamber S",0,1,366.33,58.4},
 	{"Basic Combustion Chamber M",0,1,1710,259.2},{"Uncommon Combustion Chamber M",0,1,1730,268},
-	{"Basic Combustion Chamber L",0,1,9340,1374.4},{"Uncommon Combustion Chamber L",0,1,9210,1383.2},
+	{"Basic Combustion Chamber L",0,1,9340,1374.4},{"Uncommon Combustion Chamber L",3944,14000,9210,1383.2},
 	{"Advanced Combustion Chamber XS",0,1,163.51,27.2},{"reserve",0,1,0,1},
 	{"Advanced Combustion Chamber S",0,1,369.5,58.4},{"reserve",0,1,0,1},
 	{"Advanced Combustion Chamber M",0,1,1760,268},{"reserve",0,1,0,1},
@@ -135,13 +135,58 @@ local metalwork_screen_3 = {
 }
 
 local metalwork_screen_4 = {
-	{"Basic Ionic Chamber XS",0,1,75.1,7.33},{"Uncommon Ionic Chamber XS",0,1,140.8,13.86},
+	{"Basic Ionic Chamber XS",0,1,75.1,7.33},{"Uncommon Ionic Chamb XS",0,1,140.8,13.86},
 	{"Basic Ionic Chamber S",0,1,391.6,38.24},{"Uncommon Ionic Chamber S",0,1,452.35,44.77},
 	{"Basic Ionic Chamber M",0,1,2070,202.4},{"Uncommon Ionic Chamber M",0,1,2100,208.93},
-	{"Basic Ionic Chamber L",0,1,1620,1090.4},{"Uncommon Ionic Chamber L",0,1,11010,1096.93},
+	{"Basic Ionic Chamber L",0,1,1620,1090.4},{"Uncommon Ionic Chamber L",3885,11000,11010,1096.93},
 	{"Basic Ionic Chamber XL",0,1,61230,6000.8},{"Uncommon Ionic Chamber X",0,1,60120,6007.33},
-	{"Advanced Ionic Chamber M",0,1,8640,208.93},{"reserve",0,1,0,1},
-	{"Advanced Ionic Chamber L",0,1,11370,1096.93},{"reserve",0,1,0,1},
+	{"Advanced Ionic Chamber M",0,1,8640,208.93},{"Basic Electric Engine M",0,1,377.75,39.04},
+	{"Advanced Ionic Chamber L",2028,11000,11370,1096.93},{"Basic Electric Engine S",0,1,1930,206.4},
+	{"reserve",0,1,0,1},{"Uncommon Electric Engine XL",4591,12000,50800,6107.49}
+}
+
+local metalwork_screen_5 = {
+	{"Basic Mobile Panel XS",0,1,20,9.6},{"Uncommon Mobile Panel XS",0,1,0,1},
+	{"Basic Mobile Panel S",0,1,103,49.6},{"Uncommon Mobile Panel S",0,1,0,1},
+	{"Basic Mobile Panel M",1030,5000,536,259.2},{"Uncommon Mobile Panel M",0,1,0,1},
+	{"Basic Mobile Panel L",798,8000,2830,1374.4},{"Uncommon Mobile Panel L",0,1,0,1},
+	{"Basic Mobile Panel XL",0,1,15160,7420.8},{"Uncommon Mobile Panel XL",4213,15000,14780,7429.6},
+	{"Advanced Mobile Panel XS",0,1,0,1},{"Advanced Mobile Panel L",3228,14000,2750,1383.2},
+	{"Advanced Mobile Panel s",0,1,0,1},{"Advanced Mobile Panel XL",4212,15000,14530,7429.6},
+	{"Advanced Mobile Panel M",0,1,0,1},{"reserve",0,1,0,1}
+}
+
+local metalwork_screen_6 = {
+	{"Basic Standard Frame XS",0,1,0,1},{"Advanced Standard Frame XS",1924,40,3.85,2},
+	{"Basic Standard Frame S",0,1,0,1},{"Advanced Standard Frame S",0,1,0,1},
+	{"Basic Standard Frame M",0,1,0,1},{"Advanced Standard Frame M",2847,300,138.25,74},
+	{"Basic Standard Frame L",898,2000,1080,515},{"Advanced Standard Frame L",0,1,0,1},
+	{"Uncommon Standard Frame XS",0,1,0,1},{"Advanced Standard Frame XL",0,1,0,1},
+	{"Uncommon Standard Frame S",2395,220,22.12,11},{"Rare Standard Frame S",0,1,0,1},
+	{"Uncommon Standard Frame M",0,1,0,1},{"Rare Standard Frame M",0,1,0,1},
+	{"Uncommon Standard Frame L",3258,5000,1030,515},{"Rare Standard Frame L",3227,2000,1050,515}
+}
+
+
+local metalwork_screen_7 = {
+	{"Basic Reinforced Frame XS",0,1,0,1},{"Uncommon Reinforced Frame XS",0,1,0,1},
+	{"Basic Reinforced Frame S",0,1,0,1},{"Uncommon Reinforced Frame S",0,1,0,1},
+	{"Basic Reinforced Frame M",964,300,476.56,74},{"Uncommon Reinforced Frame M",0,1,0,1},
+	{"Basic Reinforced Frame L",713,5000,3320,515},{"Uncommon Reinforced Frame L",3977,10000,3230,515},
+	{"Basic Reinforced Frame XL",0,1,0,1},{"Uncommon Reinforced Frame XL",4196,14000,22620,3602},
+	{"Advanced Reinforced Frame XS",0,1,0,1},{"Advanced Reinforced Frame L",2235,5000,3440,515},
+	{"Advanced Reinforced Frame S",0,1,0,1},{"Advanced Reinforced Frame XL",4188,14000,24060,3602},
+	{"Advanced Reinforced Frame M",0,1,0,1},{"reserve",0,1,0,1}
+}
+
+local metalwork_screen_8 = {
+	{"Rare Reinforced Frame XS",0,1,0,1},{"Exotic Reinforced Frame XS",0,1,0,1},
+	{"Rare Reinforced Frame S",0,1,0,1},{"Exotic Reinforced Frame S",0,1,0,1},
+	{"Rare Reinforced Frame M",0,1,0,1},{"Exotic Reinforced Frame M",0,1,0,1},
+	{"Rare Reinforced Frame L",4492,2000,3370,515},{"Exotic Reinforced Frame L",0,1,0,1},
+	{"Rare Reinforced Frame XL",2730,14000,23540,3602},{"Exotic Reinforced Frame XL",0,1,0,1},
+	{"Exotic Standard Frame XS",0,1,0,1},{"Exotic Standard Frame L",0,1,0,1},
+	{"Exotic Standard Frame S",0,1,0,1},{"Exotic Standard Frame M",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
 }
 
@@ -176,9 +221,9 @@ local output_3d_screen_1 = {
 	{"Basic Injector",1426,1,20.3,10},{"Basic Fixation",1772,1,1.12,1},
 	{"Uncommon Injector",3965,20000,20.5,10},{"Uncommon Fixation",1773,1,1.16,1},
 	{"Advanced Injector",0,1,20.3,10},{"Advanced Fixation",1774,1,1.21,1},
-	{"Basic Quantum Core",1344,1000,10.72,5},{"reserve",0,192000,0,1},
-	{"Uncommon Quantum Core",1345,1000,11.04,5},{"reserve",0,1,0,1},
-	{"Advanced Quantum Core",1346,1000,11.24,5},{"reserve",0,1,0,1},
+	{"Basic Quantum Core",1344,5000,10.72,5},{"reserve",0,192000,0,1},
+	{"Uncommon Quantum Core",1345,5000,11.04,5},{"reserve",0,1,0,1},
+	{"Advanced Quantum Core",1346,5000,11.24,5},{"reserve",0,1,0,1},
 	{"Rare Quantum Core",0,1,11.66,5},{"reserve",0,1,0,1},
 	{"Exotic Quantum Core",0,1,11.55,5},{"Carbon fiber",0,1,1.5,1}
 }
@@ -219,15 +264,44 @@ local template = {
 --]]
 
 -- up to 9 screens
+---[[
 local dataToShow = {}
-local dataToShow{1] = refine_screen_1
-local dataToShow{2] = refine_screen_2
-local dataToShow{3] = refine_screen_3
-local dataToShow{4] = alloy_screen
-local dataToShow{5] = electronics_screen_1
-local dataToShow{6] = electronics_screen_2
-local dataToShow{7] = electronics_screen_3
+dataToShow[1] = refine_screen_1
+dataToShow[2] = refine_screen_2
+dataToShow[3] = refine_screen_3
+dataToShow[4] = alloy_screen
+--dataToShow[5] = metalwork_screen_1
+--dataToShow[6] = metalwork_screen_2
+--dataToShow[7] = metalwork_screen_3
+--dataToShow[8] = metalwork_screen_4
+--dataToShow[9] = metalwork_screen_5
+--]]
 
+--[[
+local dataToShow = {}
+dataToShow[1] = electronics_screen_1
+dataToShow[2] = electronics_screen_2
+dataToShow[3] = electronics_screen_3
+dataToShow[4] = chemical_screen_1
+dataToShow[5] = output_3d_screen_1
+dataToShow[6] = output_3d_screen_2
+dataToShow[7] = output_3d_screen_3
+dataToShow[8] = input_3d_screen_1
+--dataToShow[9] = input_3d_screen_1
+--]]
+
+--[[
+local dataToShow = {}
+dataToShow[1] = metalwork_screen_1
+dataToShow[2] = metalwork_screen_2
+dataToShow[3] = metalwork_screen_3
+dataToShow[4] = metalwork_screen_4
+dataToShow[5] = metalwork_screen_5
+dataToShow[6] = metalwork_screen_6
+dataToShow[7] = metalwork_screen_7
+dataToShow[8] = metalwork_screen_8
+--dataToShow[9] = metalwork_screen_9
+--]]
 
 -------------------------
 -- VARIABLES ------------
@@ -343,6 +417,7 @@ local html_head = [[<style>
 -------------------------
 -- FUNCTIONS ------
 -------------------------
+
 local function initiateSlots()
 	for _, slot in pairs(unit) do
 		if type(slot) == "table" and type(slot.export) == "table" and slot.getElementClass then
