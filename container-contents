@@ -24,14 +24,14 @@ local indicator_color = "#229954" --export
 local refine_screen_1 = {
 	-- T1
 	{"Hematite",478,460800,5.04,1},{"Iron",458,76800,7.85,1,10,40,70,75},
-	{"Bauxite",479,307200,1.28,1},{"Aluminium",575,76800,2.7,1,10,40,70,75},
+	{"Bauxite",479,460800,1.28,1},{"Aluminium",575,76800,2.7,1,10,40,70,75},
 	{"Quartz",481,460800,2.65,1},{"Silicon",577,76800,2.33,1,10,40,70,75},
 	{"Coal",480,460800,1.35,1},{"Carbon",576,76800,2.27,1,10,40,70,75},
 	-- T2
-	{"Limestone",2105,153600,2.711,1},{"Calcium",854,76800,1.55,1,10,40,70,75},
-	{"Malachite",2104,153600,4,1},{"Copper",2093,76800,8.96,1,10,40,70,75},
-	{"Natron",2106,153600,1.55,1},{"Sodium",1132,76800,0.97,1,10,40,70,75},
-	{"Chromite",2103,153600,4.54,1},{"Chromium",2092,76800,7.19,1,10,40,70,75}
+	{"Limestone",2105,307200,2.711,1},{"Calcium",854,76800,1.55,1,10,40,70,75},
+	{"Malachite",2104,307200,4,1},{"Copper",2093,76800,8.96,1,10,40,70,75},
+	{"Natron",2106,307200,1.55,1},{"Sodium",1132,76800,0.97,1,10,40,70,75},
+	{"Chromite",2103,307200,4.54,1},{"Chromium",2092,76800,7.19,1,10,40,70,75}
 }
 
 local refine_screen_2 = {
@@ -60,8 +60,8 @@ local refine_screen_3 = {
 local alloy_screen = {
 	{"Al-Fe Alloy",746,10000,7.5,1},{"Inconel",1587,6000,8.5,1},
 	{"Silumin",459,10000,3,1},{"Red Gold",2484,2000,14.13,1},
-	{"Steel",646,10000,8.05,1},{"Sc-Al Alloy",2672,2000,2.85,1},
-	{"Culcium Reainforsed Copper",827,10000,8.1,1},{"Maraging Steel",2528,2000,8.23,1},
+	{"Steel",646,80000,8.05,1},{"Sc-Al Alloy",2672,2000,2.85,1},
+	{"Culcium Reainforsed Copper",827,10000,8.1,1},{"Maraging Steel",2528,6000,8.23,1},
 	{"Duralumin",2400,10000,2.8,1},{"reserve",0,76800,1,1},
 	{"Stanless Steel",460,10000,7.75,1},{"reserve",0,76800,6,1},
 	{"Cu-Ag Alloy",1804,6000,9.2,1},{"reserve",0,76800,4.51,1},
@@ -196,9 +196,9 @@ local chemical_screen_1 = {
 	{"Polycalcite Plactic",850,6000,1.5,1},{"Advanced Glass",1122,2000,2.6,1},
 	{"Polysulfite Plactic",1245,4000,1.6,1},{"Ag-Li Reinforsed Glass",2076,2000,2.8,1},
 	{"Fluoropolymer",3131,4000,1.65,1},{"Basic Anti-Matter Capsule",2178,2000,24,4.6},
-	{"reserve",0,76800,0,1},{"Uncommon Anti-Matter Capsule",2179,2000,24.32,4.6},
-	{"reserve",0,76800,0,1},{"Advanced Anti-Matter Capsule",2180,2000,24.88,4.6},
-	{"reserve",0,76800,0,1},{"reserve",0,76800,0,1},
+	{"Basic LED",1138,2500,1.25,1},{"Uncommon Anti-Matter Capsule",2179,2000,24.32,4.6},
+	{"Uncommon LED",1139,500,1.27,1},{"Advanced Anti-Matter Capsule",2180,2000,24.88,4.6},
+	{"Advanced LED",1291,500,1.32,1},{"reserve",0,76800,0,1},
 	{"reserve",0,76800,0,1},{"reserve",0,76800,0,1}
 }
 
