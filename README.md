@@ -10,7 +10,8 @@ How to use
 **1.** Copy-past "container-contents.lua" to the 'unit.start'
 
 **2.** At the end of the script cut/delete next code and paste _stop()_ to the 'unit.stop', _update()_ to the 'unit.tick("update")'
-```-------------------------
+```
+-------------------------
 -- FILTER UNIT STOP -----
 -------------------------
 stop()
@@ -26,7 +27,8 @@ update()
 **4.** Adjust your screens.
 
 Find next code in the 'unit.start'
-```-- up to 9 screens
+```
+-- up to 9 screens
 ---[[
 local dataToShow = {}
 dataToShow[1] = refine_screen_1
@@ -100,7 +102,8 @@ How to read the line:
 
 
 **5.** Adjust Lua parameters
-```-------------------------
+```
+-------------------------
 -- USER DEFINED DATA ----
 -------------------------
 local font_size = 5 --export
