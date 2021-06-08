@@ -45,7 +45,8 @@ Here you can activate up to 9 screens for this programming board.
 You can use existing screens or create your own screen using the template below.
 Each line codes one item to show. Up to 16 items can be shown with one screen.
 
-```local template = {
+```
+local template = {
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
@@ -58,7 +59,8 @@ Each line codes one item to show. Up to 16 items can be shown with one screen.
 ```
 
 Example:
-```local refine_screen_1 = {
+```
+local refine_screen_1 = {
 	-- T1
 	{"Hematite",478,460800,5.04,1},{"Iron",458,76800,7.85,1,10,40,70,75},
 	{"Bauxite",479,460800,1.28,1},{"Aluminium",575,76800,2.7,1,10,40,70,75},
