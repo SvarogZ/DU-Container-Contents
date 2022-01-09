@@ -61,7 +61,7 @@ local alloy_screen = {
 	{"Al-Fe Alloy",746,10000,7.5,1},{"Inconel",1587,6000,8.5,1},
 	{"Silumin",459,10000,3,1},{"Red Gold",2484,2000,14.13,1},
 	{"Steel",646,80000,8.05,1},{"Sc-Al Alloy",2672,2000,2.85,1},
-	{"Culcium Reainforsed Copper",827,10000,8.1,1},{"Maraging Steel",2528,6000,8.23,1},
+	{"Culcium Reainforsed Copper",827,10000,8.1,1},{"Maraging Steel",2528,12000,8.23,1},
 	{"Duralumin",2400,10000,2.8,1},{"reserve",0,76800,1,1},
 	{"Stanless Steel",460,10000,7.75,1},{"reserve",0,76800,6,1},
 	{"Cu-Ag Alloy",1804,6000,9.2,1},{"reserve",0,76800,4.51,1},
@@ -83,8 +83,8 @@ local electronics_screen_2 = {
 	{"Adv Anti-Grav Core",4400,1200,117.05,20},{"Basic Anti-Matt Capsule",0,1,24,4.6},
 	{"Rare Anti-Grav Core",2721,1200,123.22,22.5},{"Uncommon Anti-Matter Capsule",0,1,24.32,4.6},
 	{"Exot Anti-Grav Core",0,1,133.06,25},{"Adv Anti-Matter Capsule",0,1,24.88,4.6},
-	{"Adv Anti-Matter Core",2214,4000,107.08,21.5},{"reserve",0,1,0,1},
-	{"Adv Quant Align Unit",1373,5000,35.78,25},{"reserve",0,1,0,1},
+	{"Adv Anti-Matter Core",2214,4000,107.08,21.5},{"Basic Ore Scanner L",5028,10000,320.29,471.5},
+	{"Adv Quant Align Unit",1373,5000,35.78,25},{"Uncommon Ore Scanner L",5039,10000,333.7,473.9},
 	{"Exot Quant Align Unit",0,1,43.24,30},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
@@ -103,7 +103,7 @@ local electronics_screen_3 = {
 
 local metalwork_screen_1 = {
 	{"Basic Screw",656,10000,8.05,1},{"Basic Pipe",664,10000,2.4,1},
-	{"Uncommon Screw",1981,6000,7.9,1},{"Uncommon Pipe",3819,6000,2.32,1},
+	{"Uncommon Screw",1981,6000,7.9,1},{"Uncommon Pipe",3819,12000,2.32,1},
 	{"Advanced Screw",3649,4000,8.14,1},{"Advanced Pipe",0,4000,0,1},
 	{"Basic Hydraulics",669,100000,28.95,10},{"Basic Magnets",1637,50000,63.3,7.36},
 	{"Uncommon Hydraulics",3855,60000,28.35,10},{"Uncommon Magnets",1638,30000,62.1,7.36},
