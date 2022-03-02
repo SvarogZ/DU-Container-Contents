@@ -23,38 +23,38 @@ local indicator_color = "#229954" --export
 
 local refine_screen_1 = {
 	-- T1
-	{"Hematite",478,460800,5.04,1},{"Iron",458,76800,7.85,1,10,40,70,75},
-	{"Bauxite",479,460800,1.28,1},{"Aluminium",575,76800,2.7,1,10,40,70,75},
-	{"Quartz",481,460800,2.65,1},{"Silicon",577,76800,2.33,1,10,40,70,75},
-	{"Coal",480,460800,1.35,1},{"Carbon",576,76800,2.27,1,10,40,70,75},
+	{"Hematite",478,576000,5.04,1},{"Iron",458,96000,7.85,1,10,40,70,75},
+	{"Bauxite",479,576000,1.28,1},{"Aluminium",575,96000,2.7,1,10,40,70,75},
+	{"Quartz",481,576000,2.65,1},{"Silicon",577,96000,2.33,1,10,40,70,75},
+	{"Coal",480,576000,1.35,1},{"Carbon",576,96000,2.27,1,10,40,70,75},
 	-- T2
-	{"Limestone",2105,307200,2.711,1},{"Calcium",854,76800,1.55,1,10,40,70,75},
-	{"Malachite",2104,307200,4,1},{"Copper",2093,76800,8.96,1,10,40,70,75},
-	{"Natron",2106,307200,1.55,1},{"Sodium",1132,76800,0.97,1,10,40,70,75},
-	{"Chromite",2103,307200,4.54,1},{"Chromium",2092,76800,7.19,1,10,40,70,75}
+	{"Limestone",2105,384000,2.711,1},{"Calcium",854,96000,1.55,1,10,40,70,75},
+	{"Malachite",2104,384000,4,1},{"Copper",2093,96000,8.96,1,10,40,70,75},
+	{"Natron",2106,384000,1.55,1},{"Sodium",1132,96000,0.97,1,10,40,70,75},
+	{"Chromite",2103,384000,4.54,1},{"Chromium",2092,96000,7.19,1,10,40,70,75}
 }
 
 local refine_screen_2 = {
 	-- T3
-	{"Pyrite",2110,153600,5.01,1},{"Sulfur",1241,76800,1.82,1,10,40,70,75},
-	{"Petalite",2108,153600,2.41,1},{"Lithium",2086,76800,0.53,1},
-	{"Acanthite",2107,153600,7.2,1},{"Silver",2085,76800,10.49,1},
-	{"Garnierite",2109,153600,2.6,1},{"Nickel",2096,76800,8.91,1},
+	{"Pyrite",2110,192000,5.01,1},{"Sulfur",1241,96000,1.82,1,10,40,70,75},
+	{"Petalite",2108,192000,2.41,1},{"Lithium",2086,96000,0.53,1},
+	{"Acanthite",2107,192000,7.2,1},{"Silver",2085,96000,10.49,1},
+	{"Garnierite",2109,192000,2.6,1},{"Nickel",2096,96000,8.91,1},
 	-- T4
-	{"Gold Nuggets",2113,153600,19.3,1},{"Gold",2116,76800,19.3,1},
-	{"Cryolite",2112,153600,2.95,1},{"Fluorine",2117,76800,1.7,1},
-	{"Cobaltite",2111,153600,6.33,1},{"Cobalt",2115,76800,8.9,1},
-	{"Kolbeckite",2114,153600,2.37,1},{"Scandium",2118,76800,2.98,1}
+	{"Gold Nuggets",2113,192000,19.3,1},{"Gold",2116,96000,19.3,1},
+	{"Cryolite",2112,192000,2.95,1},{"Fluorine",2117,96000,1.7,1},
+	{"Cobaltite",2111,192000,6.33,1},{"Cobalt",2115,96000,8.9,1},
+	{"Kolbeckite",2114,192000,2.37,1},{"Scandium",2118,96000,2.98,1}
 }
 
 local refine_screen_3 = {
 	-- T5
-	{"Rhodonite",0,179200,3.76,1},{"Manganese",0,179200,7.21,1,10,40,70,75},
-	{"Columbite",0,179200,5.38,1},{"Niobium",0,179200,8.57,1},
-	{"Vanadinite",0,179200,6.95,1},{"Vanadium",0,179200,6,1},
-	{"Ilmenite",0,179200,4.55,1},{"Titanium",0,179200,4.51,1},
+	{"Rhodonite",0,192000,3.76,1},{"Manganese",0,192000,7.21,1,10,40,70,75},
+	{"Columbite",0,192000,5.38,1},{"Niobium",0,192000,8.57,1},
+	{"Vanadinite",0,192000,6.95,1},{"Vanadium",0,192000,6,1},
+	{"Ilmenite",0,192000,4.55,1},{"Titanium",0,192000,4.51,1},
 	-- SIDES
-	{"Hydrogen",555,153600,0.07,1,2,3,10,50},{"Oxygen",554,153600,1,1,2,3,10,50}
+	{"Hydrogen",555,192000,0.07,1,2,3,10,50},{"Oxygen",554,192000,1,1,2,3,10,50}
 }
 
 local alloy_screen = {
@@ -99,6 +99,17 @@ local electronics_screen_3 = {
 	{"Advanced Core System M",2854,1300,139.61,132.8},{"Rare Power Transf L",4473,20000,5570,1066.69},
 	{"Rare Core System L",3249,7300,783.65,728},{"Rare Power Transf XL",2515,10000,30540,5857.09},
 	{"Exotic Core System S",0,1,28.62,26.8},{"reserve",0,1,0,1}
+}
+
+local electronics_screen_4 = {
+	{"Basic Processor",1499,30000,14.84,5},{"Basic Antenna XL",5111,42000,48430,7020.8},
+	{"Uncommon Processor",0,192000,0,1},{"Uncommon Antenna XL",0,192000,0,1},
+	{"Advanced Processor",4839,15000,16.25,5},{"Advanced Antenna XL",4848,42000,53090,7028.96},
+	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
+	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
+	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
+	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
+	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1}
 }
 
 local metalwork_screen_1 = {
@@ -173,7 +184,7 @@ local metalwork_screen_7 = {
 	{"Basic Reinforced Frame S",0,1,0,1},{"Uncommon Reinforced Frame S",0,1,0,1},
 	{"Basic Reinforced Frame M",964,300,476.56,74},{"Uncommon Reinforced Frame M",0,1,0,1},
 	{"Basic Reinforced Frame L",713,5000,3320,515},{"Uncommon Reinforced Frame L",3977,10000,3230,515},
-	{"Basic Reinforced Frame XL",0,1,0,1},{"Uncommon Reinforced Frame XL",4196,14000,22620,3602},
+	{"Basic Reinforced Frame XL",5119,10000,23200,3602},{"Uncommon Reinforced Frame XL",4196,14000,22620,3602},
 	{"Advanced Reinforced Frame XS",0,1,0,1},{"Advanced Reinforced Frame L",2235,5000,3440,515},
 	{"Advanced Reinforced Frame S",0,1,0,1},{"Advanced Reinforced Frame XL",4188,14000,24060,3602},
 	{"Advanced Reinforced Frame M",0,1,0,1},{"reserve",0,1,0,1}
@@ -287,7 +298,7 @@ dataToShow[5] = output_3d_screen_1
 dataToShow[6] = output_3d_screen_2
 dataToShow[7] = output_3d_screen_3
 dataToShow[8] = input_3d_screen_1
---dataToShow[9] = input_3d_screen_1
+dataToShow[9] = electronics_screen_4
 --]]
 
 --[[
@@ -535,6 +546,7 @@ function stop()
 		screen.setHTML(html_script_stopped)
 	end
 end
+
 
 -------------------------
 -- FILTER UNIT STOP -----
