@@ -49,12 +49,12 @@ local refine_screen_2 = {
 
 local refine_screen_3 = {
 	-- T5
-	{"Rhodonite",0,192000,3.76,1},{"Manganese",0,192000,7.21,1,10,40,70,75},
-	{"Columbite",0,192000,5.38,1},{"Niobium",0,192000,8.57,1},
-	{"Vanadinite",0,192000,6.95,1},{"Vanadium",0,192000,6,1},
-	{"Ilmenite",0,192000,4.55,1},{"Titanium",0,192000,4.51,1},
+	{"Rhodonite",5203,192000,3.76,1},{"Manganese",5207,96000,7.21,1,10,40,70,75},
+	{"Columbite",5204,192000,5.38,1},{"Niobium",5208,96000,8.57,1},
+	{"Vanadinite",5205,192000,6.95,1},{"Vanadium",5209,96000,6,1},
+	{"Ilmenite",5206,192000,4.55,1},{"Titanium",5210,96000,4.51,1},
 	-- SIDES
-	{"Hydrogen",555,192000,0.07,1,2,3,10,50},{"Oxygen",554,192000,1,1,2,3,10,50}
+	{"Hydrogen",555,384000,0.07,1,1,2,10,50},{"Oxygen",554,384000,1,1,1,2,10,50}
 }
 
 local alloy_screen = {
@@ -62,8 +62,8 @@ local alloy_screen = {
 	{"Silumin",459,10000,3,1},{"Red Gold",2484,2000,14.13,1},
 	{"Steel",646,80000,8.05,1},{"Sc-Al Alloy",2672,2000,2.85,1},
 	{"Culcium Reainforsed Copper",827,10000,8.1,1},{"Maraging Steel",2528,12000,8.23,1},
-	{"Duralumin",2400,10000,2.8,1},{"reserve",0,76800,1,1},
-	{"Stanless Steel",460,10000,7.75,1},{"reserve",0,76800,6,1},
+	{"Duralumin",2400,10000,2.8,1},{"Mangalloy",5292,6000,7.83,1},
+	{"Stanless Steel",460,10000,7.75,1},{"Ti-Nb Supercond",5293,10000,10.1,1},
 	{"Cu-Ag Alloy",1804,6000,9.2,1},{"reserve",0,76800,4.51,1},
 	{"Al-Li Alloy",1927,6000,2.5,1},{"reserve",0,76800,1,1}
 }
@@ -229,14 +229,14 @@ local input_3d_screen_1 = {
 }
 
 local output_3d_screen_1 = {
-	{"Basic Injector",1426,1,20.3,10},{"Basic Fixation",1772,1,1.12,1},
-	{"Uncommon Injector",3965,20000,20.5,10},{"Uncommon Fixation",1773,1,1.16,1},
-	{"Advanced Injector",0,1,20.3,10},{"Advanced Fixation",1774,1,1.21,1},
-	{"Basic Quantum Core",1344,5000,10.72,5},{"reserve",0,192000,0,1},
-	{"Uncommon Quantum Core",1345,5000,11.04,5},{"reserve",0,1,0,1},
+	{"Basic Fixation",1772,1,1.12,1},{"Basic Injector",1426,20000,20.3,10},
+	{"Uncommon Fixation",1773,1,1.16,1},{"Uncommon Injector",3965,20000,20.5,10},
+	{"Advanced Fixation",1774,1,1.21,1},{"Advanced Injector",0,1,20.3,10},
+	{"Basic Quantum Core",1344,5000,10.72,5},{"Rare Injector",5831,20000,20.63,10},
+	{"Uncommon Quantum Core",1345,5000,11.04,5},{"Exotic Injector",0,1,0,10},
 	{"Advanced Quantum Core",1346,5000,11.24,5},{"reserve",0,1,0,1},
-	{"Rare Quantum Core",0,1,11.66,5},{"reserve",0,1,0,1},
-	{"Exotic Quantum Core",0,1,11.55,5},{"Carbon fiber",0,1,1.5,1}
+	{"Rare Quantum Core",5241,1,5000.66,5},{"reserve",0,1,0,1},
+	{"Exotic Quantum Core",5242,1,5000.55,5},{"Carbon fiber",0,1,1.5,1}
 }
 
 local output_3d_screen_2 = {
@@ -275,7 +275,7 @@ local template = {
 --]]
 
 -- up to 9 screens
----[[
+--[[
 local dataToShow = {}
 dataToShow[1] = refine_screen_1
 dataToShow[2] = refine_screen_2
@@ -301,7 +301,7 @@ dataToShow[8] = input_3d_screen_1
 dataToShow[9] = electronics_screen_4
 --]]
 
---[[
+---[[
 local dataToShow = {}
 dataToShow[1] = metalwork_screen_1
 dataToShow[2] = metalwork_screen_2
