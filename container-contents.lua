@@ -54,7 +54,10 @@ local refine_screen_3 = {
 	{"Vanadinite",5205,192000,6.95,1},{"Vanadium",5209,96000,6,1},
 	{"Ilmenite",5206,192000,4.55,1},{"Titanium",5210,96000,4.51,1},
 	-- SIDES
-	{"Hydrogen",555,384000,0.07,1,1,2,10,50},{"Oxygen",554,384000,1,1,1,2,10,50}
+	{"",0,1,0,1},{"",0,1,0,1},
+	{"Hydrogen",555,384000,0.07,1,1,2,10,50},{"Catalyst 3",0,12000,1,1,5,10,60,80},
+	{"Oxygen",554,384000,1,1,1,2,10,50},{"Catalyst 4",0,12000,1,1,5,10,60,80},
+	{"",0,1,0,1},{"Catalyst 5",0,12000,1,1,5,10,60,80}
 }
 
 local alloy_screen = {
@@ -64,8 +67,8 @@ local alloy_screen = {
 	{"Culcium Reainforsed Copper",827,10000,8.1,1},{"Maraging Steel",2528,12000,8.23,1},
 	{"Duralumin",2400,10000,2.8,1},{"Mangalloy",5292,6000,7.83,1},
 	{"Stanless Steel",460,10000,7.75,1},{"Ti-Nb Supercond",5293,10000,10.1,1},
-	{"Cu-Ag Alloy",1804,6000,9.2,1},{"reserve",0,76800,4.51,1},
-	{"Al-Li Alloy",1927,6000,2.5,1},{"reserve",0,76800,1,1}
+	{"Cu-Ag Alloy",1804,6000,9.2,1},{"reserve",0,1,0,1},
+	{"Al-Li Alloy",1927,6000,2.5,1},{"reserve",0,1,0,1}
 }
 
 local electronics_screen_1 = {
@@ -124,17 +127,28 @@ local metalwork_screen_1 = {
 }
 
 local metalwork_screen_2 = {
-	{"Basic Burner",1457,20000,50.2,10},{"reserve",0,1,0,1},
-	{"Uncommon Burner",3935,40000,49.4,10},{"reserve",0,1,0,1},
-	{"Advanced Burner",0,1,48.5,10},{"reserve",0,1,0,1},
-	{"Basic Singularity Container",2629,4000,45.36,4},{"reserve",0,1,0,1},
-	{"Uncommon Singularity Container",2631,2400,44.88,4},{"reserve",0,1,0,1},
-	{"Advanced Singularity Container",2635,1600,46.22,4},{"reserve",0,1,0,1},
-	{"Rare Singularity Container",2646,1600,46.58,4},{"reserve",0,1,0,1},
-	{"Exotic Singularity Container",0,1600,46.98,4},{"reserve",0,1,0,1}
+	{"Basic Singularity Container",2629,4000,45.36,4},{"Basic Burner",1457,20000,50.2,10},
+	{"Uncommon Singularity Container",2631,2400,44.88,4},{"Uncommon Burner",3935,40000,49.4,10},
+	{"Advanced Singularity Container",2635,1600,46.22,4},{"Advanced Burner",0,1,48.5,10},
+	{"Rare Singularity Container",2646,1600,46.58,4},{"Rare Burner",0,1,0,1},
+	{"Exotic Singularity Container",0,1600,46.98,4},{"Exotic Burner",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
 }
 
 local metalwork_screen_3 = {
+	{"Basic Combustion Chamber L",0,1,9340,1374.4},{"Basic Ionic Chamber L",0,1,1620,1090.4},
+	{"Uncommon Combustion Chamber L",3944,14000,9210,1383.2},{"Uncommon Ionic Chamber L",3885,11000,11010,1096.93},
+	{"Advanced Combustion Chamber L",0,1,0,1},{"Advanced Ionic Chamber L",2028,11000,11370,1096.93},
+	{"Rare Combustion Chamber L",0,1,0,1},{"Rare Ionic Chamber L",0,1,0,1},
+	{"Exotic Combustion Chamber L",0,1,0,1},{"Exotic Ionic Chamber L",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
+	{"reserve",0,1,0,1},{"Uncommon Electric Engine XL",4591,12000,50800,6107.49}
+}
+
+local metalwork_screen_31 = {
 	{"Basic Combustion Chamber XS",0,1,60.65,9.6},{"Uncommon Combustion Chamb XS",0,1,112.07,18.4},
 	{"Basic Combustion Chamber S",0,1,319.35,49.6},{"Uncommon Combustion Chamber S",0,1,366.33,58.4},
 	{"Basic Combustion Chamber M",0,1,1710,259.2},{"Uncommon Combustion Chamber M",0,1,1730,268},
@@ -150,7 +164,7 @@ local metalwork_screen_4 = {
 	{"Basic Ionic Chamber S",0,1,391.6,38.24},{"Uncommon Ionic Chamber S",0,1,452.35,44.77},
 	{"Basic Ionic Chamber M",0,1,2070,202.4},{"Uncommon Ionic Chamber M",0,1,2100,208.93},
 	{"Basic Ionic Chamber L",0,1,1620,1090.4},{"Uncommon Ionic Chamber L",3885,11000,11010,1096.93},
-	{"Basic Ionic Chamber XL",0,1,61230,6000.8},{"Uncommon Ionic Chamber X",0,1,60120,6007.33},
+	{"Basic Ionic Chamber XL",0,1,61230,6000.8},{"Uncommon Ionic Chamber XL",0,1,60120,6007.33},
 	{"Advanced Ionic Chamber M",0,1,8640,208.93},{"Basic Electric Engine M",0,1,377.75,39.04},
 	{"Advanced Ionic Chamber L",2028,11000,11370,1096.93},{"Basic Electric Engine S",0,1,1930,206.4},
 	{"reserve",0,1,0,1},{"Uncommon Electric Engine XL",4591,12000,50800,6107.49}
@@ -177,7 +191,6 @@ local metalwork_screen_6 = {
 	{"Uncommon Standard Frame M",0,1,0,1},{"Rare Standard Frame M",0,1,0,1},
 	{"Uncommon Standard Frame L",3258,5000,1030,515},{"Rare Standard Frame L",3227,2000,1050,515}
 }
-
 
 local metalwork_screen_7 = {
 	{"Basic Reinforced Frame XS",0,1,0,1},{"Uncommon Reinforced Frame XS",0,1,0,1},
