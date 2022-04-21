@@ -54,10 +54,10 @@ local refine_screen_3 = {
 	{"Vanadinite",5205,192000,6.95,1},{"Vanadium",5209,96000,6,1},
 	{"Ilmenite",5206,192000,4.55,1},{"Titanium",5210,96000,4.51,1},
 	-- SIDES
-	{"",0,1,0,1},{"",0,1,0,1},
-	{"Hydrogen",555,384000,0.07,1,1,2,10,50},{"Catalyst 3",0,12000,1,1,5,10,60,80},
-	{"Oxygen",554,384000,1,1,1,2,10,50},{"Catalyst 4",0,12000,1,1,5,10,60,80},
-	{"",0,1,0,1},{"Catalyst 5",0,12000,1,1,5,10,60,80}
+	{"Catalysts",0,1,0,1},{"Gases",0,1,0,1},
+	{"Catalyst 3",0,12000,1,1,3,10,60,80},{"Hydrogen",555,384000,0.07,1,1,2,10,50},
+	{"Catalyst 4",0,12000,1,1,3,10,60,80},{"Oxygen",554,384000,1,1,1,2,10,50},
+	{"Catalyst 5",0,12000,1,1,3,10,60,80}
 }
 
 local alloy_screen = {
@@ -220,10 +220,10 @@ local chemical_screen_1 = {
 	{"Polycalcite Plactic",850,6000,1.5,1},{"Advanced Glass",1122,2000,2.6,1},
 	{"Polysulfite Plactic",1245,4000,1.6,1},{"Ag-Li Reinforsed Glass",2076,2000,2.8,1},
 	{"Fluoropolymer",3131,4000,1.65,1},{"Basic Anti-Matter Capsule",2178,2000,24,4.6},
-	{"Basic LED",1138,2500,1.25,1},{"Uncommon Anti-Matter Capsule",2179,2000,24.32,4.6},
-	{"Uncommon LED",1139,500,1.27,1},{"Advanced Anti-Matter Capsule",2180,2000,24.88,4.6},
-	{"Advanced LED",1291,500,1.32,1},{"reserve",0,76800,0,1},
-	{"reserve",0,76800,0,1},{"reserve",0,76800,0,1}
+	{"Vanamer",0,1,0,1},{"Uncommon Anti-Matter Capsule",2179,2000,24.32,4.6},
+	{"Basic LED",1138,2500,1.25,1},{"Advanced Anti-Matter Capsule",2180,2000,24.88,4.6},
+	{"Uncommon LED",1139,500,1.27,1},{"reserve",0,76800,0,1},
+	{"Advanced LED",1291,500,1.32,1},{"reserve",0,76800,0,1}
 }
 
 local input_3d_screen_1 = {
