@@ -55,9 +55,9 @@ local refine_screen_3 = {
 	{"Ilmenite",5206,192000,4.55,1},{"Titanium",5210,96000,4.51,1},
 	-- SIDES
 	{"Catalysts",0,1,0,1},{"Gases",0,1,0,1},
-	{"Catalyst 3",0,12000,1,1,3,10,60,80},{"Hydrogen",555,384000,0.07,1,1,2,10,50},
-	{"Catalyst 4",0,12000,1,1,3,10,60,80},{"Oxygen",554,384000,1,1,1,2,10,50},
-	{"Catalyst 5",0,12000,1,1,3,10,60,80}
+	{"Catalyst 3",1226,12000,649.39,1,3,10,60,80},{"Hydrogen",555,384000,0.07,1,1,2,10,50},
+	{"Catalyst 4",1227,12000,606.65,1,3,10,60,80},{"Oxygen",554,384000,1,1,1,2,10,50},
+	{"Catalyst 5",1823,12000,657.68,1,3,10,60,80}
 }
 
 local alloy_screen = {
@@ -88,7 +88,7 @@ local electronics_screen_2 = {
 	{"Exot Anti-Grav Core",0,1,133.06,25},{"Adv Anti-Matter Capsule",0,1,24.88,4.6},
 	{"Adv Anti-Matter Core",2214,4000,107.08,21.5},{"Basic Ore Scanner L",5028,10000,320.29,471.5},
 	{"Adv Quant Align Unit",1373,5000,35.78,25},{"Uncommon Ore Scanner L",5039,10000,333.7,473.9},
-	{"Exot Quant Align Unit",0,1,43.24,30},{"reserve",0,1,0,1},
+	{"Exot Quant Align Unit",5349,18000,43.24,30},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
 }
@@ -108,7 +108,7 @@ local electronics_screen_4 = {
 	{"Basic Processor",1499,30000,14.84,5},{"Basic Antenna XL",5111,42000,48430,7020.8},
 	{"Uncommon Processor",0,192000,0,1},{"Uncommon Antenna XL",0,192000,0,1},
 	{"Advanced Processor",4839,15000,16.25,5},{"Advanced Antenna XL",4848,42000,53090,7028.96},
-	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
+	{"reserve",0,192000,0,1},{"Exotic Antenna XL",5377,14000,61580,7028.16},
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
@@ -131,7 +131,7 @@ local metalwork_screen_2 = {
 	{"Uncommon Singularity Container",2631,2400,44.88,4},{"Uncommon Burner",3935,40000,49.4,10},
 	{"Advanced Singularity Container",2635,1600,46.22,4},{"Advanced Burner",0,1,48.5,10},
 	{"Rare Singularity Container",2646,1600,46.58,4},{"Rare Burner",0,1,0,1},
-	{"Exotic Singularity Container",0,1600,46.98,4},{"Exotic Burner",0,1,0,1},
+	{"Exotic Singularity Container",0,1,0,1},{"Exotic Burner",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1}
@@ -220,7 +220,7 @@ local chemical_screen_1 = {
 	{"Polycalcite Plactic",850,6000,1.5,1},{"Advanced Glass",1122,2000,2.6,1},
 	{"Polysulfite Plactic",1245,4000,1.6,1},{"Ag-Li Reinforsed Glass",2076,2000,2.8,1},
 	{"Fluoropolymer",3131,4000,1.65,1},{"Basic Anti-Matter Capsule",2178,2000,24,4.6},
-	{"Vanamer",0,1,0,1},{"Uncommon Anti-Matter Capsule",2179,2000,24.32,4.6},
+	{"Vanamer",5310,4000,1.57,1},{"Uncommon Anti-Matter Capsule",2179,2000,24.32,4.6},
 	{"Basic LED",1138,2500,1.25,1},{"Advanced Anti-Matter Capsule",2180,2000,24.88,4.6},
 	{"Uncommon LED",1139,500,1.27,1},{"reserve",0,76800,0,1},
 	{"Advanced LED",1291,500,1.32,1},{"reserve",0,76800,0,1}
