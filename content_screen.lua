@@ -52,7 +52,7 @@ local high_high_level_color = "#922B21"
 
 -- Indicator settings
 local indicatorSize = 10
-local indicator_color = "#229954" --export
+local indicator_color = "#229954"
 
 -------------------------
 -- LIBRARIES ------------
