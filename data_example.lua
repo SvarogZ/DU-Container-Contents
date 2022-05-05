@@ -106,7 +106,7 @@ local metalwork_screen_1 = {
 local metalwork_screen_2 = {
 	{"Basic Singularity Container",2629,4000,45.36,4},{"Basic Burner",1457,20000,50.2,10},
 	{"Uncommon Singularity Container",2631,2400,44.88,4},{"Uncommon Burner",3935,40000,49.4,10},
-	{"Advanced Singularity Container",2635,1600,46.22,4},{"Advanced Burner",0,1,48.5,10},
+	{"Advanced Singularity Container",2635,1600,46.22,4},{"Advanced Burner",5816,6000,48.5,10},
 	{"Rare Singularity Container",2646,1600,46.58,4},{"Rare Burner",5817,10000,48.05,10},
 	{"Exotic Singularity Container",0,1,0,1},{"Exotic Burner",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
