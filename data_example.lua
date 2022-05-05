@@ -84,8 +84,8 @@ local electronics_screen_3 = {
 local electronics_screen_4 = {
 	{"Basic Processor",1499,30000,14.84,5},{"Basic Antenna XL",5111,28000,48430,7020.8},
 	{"Uncommon Processor",0,192000,0,1},{"Uncommon Antenna XL",0,192000,0,1},
-	{"Advanced Processor",4839,15000,16.25,5},{"Advanced Antenna XL",4848,42000,53090,7028.96},
-	{"reserve",0,192000,0,1},{"Exotic Antenna XL",5377,14000,61580,7028.16},
+	{"Advanced Processor",4839,15000,16.25,5},{"Advanced Antenna XL",4848,28000,53090,7028.96},
+	{"reserve",0,192000,0,1},{"Exotic Antenna XL",5377,28000,61580,7028.16},
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
 	{"reserve",0,192000,0,1},{"reserve",0,192000,0,1},
