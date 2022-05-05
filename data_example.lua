@@ -118,7 +118,7 @@ local metalwork_screen_3 = {
 	{"Basic Combustion Chamber L",0,1,9340,1374.4},{"Basic Ionic Chamber L",0,1,1620,1090.4},
 	{"Uncommon Combustion Chamber L",3944,14000,9210,1383.2},{"Uncommon Ionic Chamber L",3885,11000,11010,1096.93},
 	{"Advanced Combustion Chamber L",0,1,0,1},{"Advanced Ionic Chamber L",2028,11000,11370,1096.93},
-	{"Rare Combustion Chamber L",0,1,0,1},{"Rare Ionic Chamber L",0,1,0,1},
+	{"Rare Combustion Chamber L",5877,13800,9230,1383.2},{"Rare Ionic Chamber L",5876,11000,11350,1096.93},
 	{"Exotic Combustion Chamber L",0,1,0,1},{"Exotic Ionic Chamber L",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
 	{"reserve",0,1,0,1},{"reserve",0,1,0,1},
