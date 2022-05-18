@@ -20,7 +20,7 @@ function TableClass:new(backgroundColor,borderWidth,borderColor,borderSpacing,bo
 	
 	local publicObj = {}
 	
-	function publicObj:draw(layer, x, y, width, height, column, row, cellOddRow, cellEvenRow, data, columnPattern, rowPattern)
+	function publicObj:draw(layer, x, y, width, height, column, row, cellOddRow, cellEvenRow, data, columnPattern, textAlignPattern, rowPattern)
 		local x = x + privateObj.borderSpacing
 		local y = y + privateObj.borderSpacing
 		local width = width - 2 * privateObj.borderSpacing
@@ -54,9 +54,10 @@ function TableClass:new(backgroundColor,borderWidth,borderColor,borderSpacing,bo
 			for j = 0, column - 1 do
 				local cellWidthPercent = privateObj.getFormPattern(columnPattern,j+1) 
 				local cellWidth = cellWidthPercent and width * cellWidthPercent / 100 or cellWidth
+				local textAlign = privateObj.getFormPattern(textAlignPattern,j+1) or 0
 				
 				local text = data and data[i+1] and data[i+1][j+1] or ""
-				cell:draw(layer, x+widthUsed, y+heightUsed, cellWidth, cellHeight, "Cell - "..text)
+				cell:draw(layer, x+widthUsed, y+heightUsed, cellWidth, cellHeight, "Cell - "..text, textAlign)
 				widthUsed = widthUsed + cellWidth
 			end
 			heightUsed = heightUsed + cellHeight
@@ -69,12 +70,11 @@ function TableClass:new(backgroundColor,borderWidth,borderColor,borderSpacing,bo
 end
 
 local CellClass = {}
-function CellClass:new(font,fontColor,textAlign,backgroundColor,borderWidth,borderColor,borderSpacing,borderPadding,borderRadius)
+function CellClass:new(font,fontColor,backgroundColor,borderWidth,borderColor,borderSpacing,borderPadding,borderRadius)
 	
 	local privateObj = {
 		font = font,
 		fontColor = fontColor or {1,1,1,1},
-		textAlign = textAlign or 0,
 		backgroundColor = backgroundColor or {0,0,0,1},
 		borderWidth = borderWidth or 1,
 		borderColor = borderColor or {1,1,1,1},
@@ -109,7 +109,7 @@ function CellClass:new(font,fontColor,textAlign,backgroundColor,borderWidth,bord
 	
 	local publicObj = {}
 	
-	function publicObj:draw(layer, x, y, width, height, text)
+	function publicObj:draw(layer, x, y, width, height, text, textAlign)
 		local x = x + privateObj.borderSpacing
 		local y = y + privateObj.borderSpacing
 		local width = width - 2 * privateObj.borderSpacing
@@ -124,11 +124,11 @@ function CellClass:new(font,fontColor,textAlign,backgroundColor,borderWidth,bord
 		local textLines = privateObj.getTextWrapped(privateObj.font, text, width-privateObj.borderPadding*2)
 		local lineVerticalShift = (height)/(1+#textLines)
 		
-		local textX = x + privateObj.borderPadding + privateObj.textAlign * (width - privateObj.borderPadding) / 2
+		local textX = x + privateObj.borderPadding + textAlign * (width - privateObj.borderPadding) / 2
 		
 		for i,textLine in ipairs(textLines) do
 			setNextFillColor(layer, privateObj.fontColor[1], privateObj.fontColor[2], privateObj.fontColor[3], privateObj.fontColor[4])
-			setNextTextAlign(layer, privateObj.textAlign, 2)
+			setNextTextAlign(layer, textAlign, 2)
 			addText(layer, privateObj.font, textLine, textX, y+i*lineVerticalShift)
 		end
 	end
@@ -143,6 +143,7 @@ end
 local headingData = { {"#","ID","Name","Visit","Pre. visit","Visits"} }
 local tableColumnWidthPattern = {5,15,30,20,20,10}
 local tableRowHeightPattern = {8,12}
+local textAlignColumnPattern = {1,0}
 
 
 local col_number = 6
@@ -150,7 +151,6 @@ local row_number = 10
 local font_name = "FiraMono"
 local font_size = 10
 local font_color = {1,0,0,1}
-local text_align = 0
 local table_color = {1,1,1,1}
 local table_border_width = 10
 local table_border_color = {0.1,0.7,0.5,1}
@@ -168,8 +168,8 @@ local cell_border_radius = 5
 local font = loadFont (font_name, font_size)
 
 local tableT = TableClass:new(table_color,table_border_width,table_border_color,table_border_spacing,table_border_padding,table_border_radius)
-local cellOddRow = CellClass:new(font,font_color,text_align,cell_color_odd_row,cell_border_width,cell_border_color,cell_border_spacing,cell_border_padding,cell_border_radius)
-local cellEvenRow = CellClass:new(font,font_color,text_align,cell_color_even_row,cell_border_width,cell_border_color,cell_border_spacing,cell_border_padding,cell_border_radius)
+local cellOddRow = CellClass:new(font,font_color,cell_color_odd_row,cell_border_width,cell_border_color,cell_border_spacing,cell_border_padding,cell_border_radius)
+local cellEvenRow = CellClass:new(font,font_color,cell_color_even_row,cell_border_width,cell_border_color,cell_border_spacing,cell_border_padding,cell_border_radius)
 
 local layer = createLayer()
 local screenWidth, screenHeight = getResolution()
@@ -180,4 +180,4 @@ local data = {	{"1:1","1:2","1:3","1:4","1:5"},
 				{"4:1","4:2","4:3","4:4","4:5"},
 				{"5:1","5:2","5:3","5:4","5:5"}}
 
-tableT:draw(layer, 0, 0, screenWidth, screenHeight, col_number, row_number, cellOddRow, cellEvenRow, data, tableColumnWidthPattern, tableRowHeightPattern)
+tableT:draw(layer, 0, 0, screenWidth, screenHeight, col_number, row_number, cellOddRow, cellEvenRow, data, tableColumnWidthPattern, textAlignColumnPattern, tableRowHeightPattern)
