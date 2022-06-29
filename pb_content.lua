@@ -6,8 +6,8 @@ local blinkIndicator = false
 
 local function initiateSlots()
 	for _, slot in pairs(unit) do
-		if type(slot) == "table" and type(slot.export) == "table" and slot.getElementClass then
-			local elementClass = slot.getElementClass():lower()
+		if type(slot) == "table" and type(slot.export) == "table" and slot.getClass then
+			local elementClass = slot.getClass():lower()
 			if elementClass:find("coreunit") then
 				core = slot
 			elseif elementClass == "screenunit" then
@@ -24,7 +24,7 @@ local function initiateSlots()
 		error("No screen connected!")
 	end
 	
-	table.sort(screens, function (a, b) return (a.getId() < b.getId()) end)
+	table.sort(screens, function (a, b) return (a.getLocalId() < b.getLocalId()) end)
 end
 
 local function getDataFromScreens()
@@ -65,7 +65,7 @@ function stop()
 end
 
 -------------------------
--- UPDATE TIMER ---------
+-- UPDATE TIMER ------
 -------------------------
 unit.setTimer("update", update_time)
 
