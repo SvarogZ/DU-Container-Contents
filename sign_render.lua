@@ -14,7 +14,7 @@ local preferedImageSizeX = preferedImageSizeY / imageRatio
 if isImageLoaded (image) then
     addImage (layer, image, (rx - preferedImageSizeX)/2, 0, preferedImageSizeX, preferedImageSizeY)
 else
-    requestAnimationFrame(10)
+    requestAnimationFrame(15)
 end
 
 local font = loadFont('FiraMono-Bold', ry/5)
