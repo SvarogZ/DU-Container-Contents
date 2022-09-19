@@ -7,26 +7,13 @@ The script has an indicator to identify the working condition.
 
 How to use
 
-**1.** Copy-past "pb_content.lua" to the 'unit.start' of programming board
+**1.** Copy-past "pb_content.conf" to programming board
 
-**2.** At the end of the script cut/delete next code and paste _stop()_ to the 'unit.stop', _update()_ to the 'unit.tick("update")'
-```
--------------------------
--- FILTER UNIT STOP -----
--------------------------
-stop()
+**2.** Connect core unit and up to 9 screens to the programming board. It's able to automatically identify them.
 
--------------------------
--- FILTER UPDATE --------
--------------------------
-update()
-```
+**3.** Copy-past "content_screen.lua." to all screens connected to the programming board.
 
-**3.** Connect core unit and up to 9 screens to the programming board. It's able to automatically identify them.
-
-**4.** Copy-past "content_screen.lua." to all screens connected to the programming board.
-
-**5.** Adjust your screens.
+**4.** Adjust your screens.
 ```
 -------------------------
 -- USER DEFINED DATA ----
