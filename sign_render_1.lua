@@ -1,6 +1,7 @@
-local name = "Oxygen"
-local imagePath = "resources_generated/elements/pures/pure-gazs/pure-gaz-oxygen_001/icons/env_pure-gaz-oxygen_001_icon.png"
+local name = "Hydrogen"
+local imagePath = "resources_generated/elements/pures/pure-gazs/pure-gaz-hydrogen_001/icons/env_pure-gaz-hydrogen_001_icon.png"
 local fontSize = 1
+local imageSize = 1.3
 
 local layer = createLayer()
 local rx, ry = getResolution()
@@ -14,7 +15,7 @@ image = loadImage(imagePath)
 if image and isImageLoaded and isImageLoaded(image) then
 	local imageX, imageY = getImageSize(image)
 	local imageRatio = imageY/imageX
-	local preferedImageSizeY = ry / 2
+	local preferedImageSizeY = ry / 2 * imageSize
 	local preferedImageSizeX = preferedImageSizeY / imageRatio
 
 	addImage(layer, image, (rx - preferedImageSizeX)/2, 0, preferedImageSizeX, preferedImageSizeY)
