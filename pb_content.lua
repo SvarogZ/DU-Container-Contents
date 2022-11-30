@@ -1,5 +1,6 @@
 local update_time = 1 --export
 local hubMass = 55.8
+local massFactor = 5  --export
 local screens = {}
 local core = nil
 local blinkIndicator = false
@@ -50,7 +51,7 @@ function update()
 			dataToSend.blinkIndicator = blinkIndicator
 
 			for _,id in pairs(dataFormScreens[i]) do
-				dataToSend[id] = core.getElementMassById(id) - hubMass
+				dataToSend[id] = (core.getElementMassById(id) - hubMass)/(1 - massFactor * 0.05) 
 			end
 
 			screen.setScriptInput(json.encode(dataToSend))
