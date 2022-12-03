@@ -202,6 +202,9 @@ local function drawCell(row ,col, data)
 	if row % 2 > 0 then
 		local r,g,b = hex2rgb(row_color_2)
 		setNextFillColor (tableLayer, r, g, b, 1)
+	else
+		local r,g,b = hex2rgb(row_color_1)
+		setNextFillColor (tableLayer, r, g, b, 1)
 	end
 	
 	addBox(tableLayer, cellX, cellY, cellWidth-bezel, cellHeight-bezel)
